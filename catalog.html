@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог Нёрдс</title>
+  </head>
+  <body>
+	<header class="main-header">
+		<div class="container">
+			<div class="main-header-top">
+				<nav class="main-navigation">
+					<a class="main-header-logo" href="index.html">
+						<img src="#" alt="Нёрдс" width="#" height="#">
+					</a>
+
+					<ul class="site-navigation">
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a  class="active">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+
+					<ul class="user-navigation">
+						<li><a href="#" class="user-block">Корзина</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main-header-bottom">
+				<h1 class="main-title">Магазин готовых шаблонов</h1>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container catalog-content">
+			<div class="catalog-content-left">
+				<form class="catalog-filters"></form> <!--пока не разметила форму-->
+			</div>
+			<div class="catalog-content-right">
+		    <section class="catalog-sorting">
+		    	<span class="sorting-title">Сортировать:</span>
+		    	<ul>
+		    		<li><a href="#">По цене</a></li>
+		    		<li><a href="#">По типу</a></li>
+		    		<li><a href="#">По названию</a></li>
+		    	</ul>
+		    </section>
+		    <section class="projects">
+		    	<ul>
+		    		<li class="projects-item">
+		    			<div class="cart-block">
+		    				<img src="#" alt="Sedona" width="#" height="#">
+		    			</div>
+		    			<div class="hover-block">
+		    				<h3 class="project-title">Sedona</h3> <!--в ТЗ написано "Карточка товара: название товара является ссылкой", но по стайлгайду прорисованы состояния только кнопки с ценой. Я так понимаю, что тут стайлгайд имеет наивысший проритет и не стала делать название Sedona ссылкой-->
+		    				<p>Информационный сайт 
+							для туристов</p>
+		    				<a class="btn" href="#">9 900 руб.</a> 
+		    			</div>
+
+		    		</li>
+		    		<li class="projects-item">
+		    			<div class="cart-block">
+		    				<img src="#" alt="Pink App" width="#" height="#">
+		    			</div>
+		    			<div class="hover-block">
+		    				<h3 class="project-title">Pink App</h3> 
+		    				<p>Продуктовый лендинг
+							приложения для iOS и Android</p>
+		    				<a class="btn" href="#">9 900 руб.</a> 
+		    			</div>
+		    			
+
+		    		</li>
+		    		<li class="projects-item">
+		    			<div class="cart-block">
+		    				<img src="#" alt="Barbershop" width="#" height="#">
+		    			</div>
+		    			<div class="hover-block">
+		    				<h3 class="project-title">Barbershop</h3>
+		    				<p>Сайт салоны красоты.
+		    				Для мужчин, да.</p>
+		    				<a class="btn" href="#">9 900 руб.</a> 
+		    			</div>
+		    			
+
+		    		</li>
+		    		<li class="projects-item">
+		    			<div class="cart-block">
+		    				<img src="#" alt="MISHKA" width="#" height="#">
+		    			</div>
+		    			<div class="hover-block">
+		    				<h3 class="project-title">MISHKA</h3>
+		    				<p>Интернет-магазин 
+							вязаных игрушек</p>
+		    				<a class="btn" href="#">9 900 руб.</a> 
+		    			</div>
+		    			
+
+		    		</li>
+		    		<li class="projects-item">
+		    			<div class="cart-block">
+		    				<img src="#" alt="A Plus" width="#" height="#">
+		    			</div>
+		    			<div class="hover-block">
+		    				<h3 class="project-title">A Plus</h3> 
+		    				<p>Лендинг курсов повышения квалификации</p>
+		    				<a class="btn" href="#">9 900 руб.</a> 
+		    			</div>
+		    			
+
+		    		</li>
+		    		<li class="projects-item">
+		    			<div class="cart-block">
+		    				<img src="#" alt="КВАСТ" width="#" height="#">
+		    			</div>
+		    			<div class="hover-block">
+		    				<h3 class="project-title">КВАСТ</h3> 
+		    				<p>Промо-сайт производителя
+							крафтового кваса</p>
+		    				<a class="btn" href="#">9 900 руб.</a> 
+		    			</div>
+		    		</li>
+		    	</ul>
+		    </section>
+		    <section class="page-numbers">
+		    	<ul>
+		    		<li class="page-number-item active-page"><a>1</a></li>
+		    		<li class="page-number-item"><a href="#">2</a></li>
+		    		<li class="page-number-item"><a href="#">3</a></li>
+		    		<li class="page-number-item"><a href="#">Следующая</a></li>
+		    	</ul>
+		    </section>
+		    </div>
+		</div>
+	</main>
+	<div class="map"> <!--можно размечать блоки, которые не входят в main,header и footer?-->
+		<!--нужен контейнер для блока с адресом? (карта тянется на всю ширину)-->
+		<article class="contacts"> <!--или можно как article?-->
+			<h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
+			<p>191186, Санкт-Петербург, <br>
+			ул. Б. Конюшенная, д. 19/8 <p>
+			<p>тел. +7 (812) 275-75-75</p> 
+			<a href="#" class="btn">Напишите нам</a>
+		</article>
+		<div class="pin">
+			<img src="#" alt="Мы здесь" width="#" height="#"></div>
+		</div>
+	<footer class="main-footer">
+		<div class="container">
+			<section class="footer-social">
+				<div class="footer-social-left">
+					<ul>
+						<li class="social-button"><a href="#">Вконтакте</a></li>
+						<li class="social-button"><a href="#">Фейсбук</a></li>
+						<li class="social-button"><a href="#">Инстаграм</a></li>
+					</ul>
+				</div>
+				<div class="footer-social-right">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</section>
+		</div>
+	</footer>
+	<section class="modal modal-feedback">
+		<b>Напишите нам</b> <!--или это заголовок?-->
+		<form></form> <!--пока не разметила форму-->
+	</section>
+  </body>
+</html>
