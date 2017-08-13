@@ -21,37 +21,44 @@
 					</ul>
 
 					<ul class="user-navigation">
-						<li><a href="#" class="user-block">Корзина</a></li>
+						<li><a class="user-block" href="#">Корзина</a></li>
 					</ul>
 				</nav>
 			</div>
 			<div class="main-header-bottom">
 				<section class="slider">
-					<div class="toggle"></div> <!--пока не разметила переключатель-->
+					<input type="radio" id="btn-1" name="toggle" checked>
+					<input type="radio" id="btn-2" name="toggle">
+					<input type="radio" id="btn-3" name="toggle">
 					<div class="slides">
 						<ul>
 							<li class="slide">
-								<b class="slide-title">Долго, дорого,<br>
+								<b class="slide-title">Долго, дорого,
 								скурпулезно</b>
 								<p>Математически выверенный дизайн 
 								для вашего сайта или мобильного приложения.</p>
 								<a class="btn" href="">Узнать больше</a>
 							</li>
 							<li class="slide">
-								<b class="slide-title">Любим математику<br>
+								<b class="slide-title">Любим математику
 								как никто другой</b>
 								<p>Никакого креатива, только математические формулы 
 								для расчета идеальных пропорций.</p>
 								<a class="btn" href="">Узнать больше</a>
 							</li>
 							<li class="slide">
-								<b class="slide-title">Только ночь,<br>
+								<b class="slide-title">Только ночь,
 								только хардкор</b>
 								<p>Работать днем, как все? Мы против этого.
 								Ближе к полуночи работа только начинается.</p>
 								<a class="btn" href="">Узнать больше</a>
 							</li>
 						</ul>
+					</div>
+					<div class="slider-controls">
+						<label for="btn-1"></label>
+						<label for="btn-2"></label>
+						<label for="btn-3"></label>
 					</div>
 				</section>
 			</div>
@@ -65,19 +72,19 @@
 						<h3 class="services-title">Веб-сайты</h3> <!--т.к. h1-название сайта, а h2-заголовок "Услуги"-->
 						<p>Мир никогда не будет прежним 
 						после того как увидит ваш сайт!</p>
-						<a href="#" class="btn">Заказать</a>
+						<a class="btn" href="#">Заказать</a>
 					</li>
 					<li class="services-item">
 						<h3 class="services-title">Приложения</h3>
 						<p>Покорите топ-10 приложений в 
 						AppStore и Google Play</p>
-						<a href="#" class="btn">Заказать</a>
+						<a class="btn" href="#">Заказать</a>
 					</li>
 					<li class="services-item">
 						<h3 class="services-title">Презентации</h3>
 						<p>Вы даже не подозреваете, 
 						насколько вы изумительны!</p>
-						<a href="#" class="btn">Заказать</a>
+						<a class="btn" href="#">Заказать</a>
 					</li>
 				</ul>
 			</section>
@@ -114,45 +121,43 @@
 				<ul>
 					<li class="partners-item">
 						<a href="https://htmlacademy.ru/intensive/htmlcss">
-							<img src="#" alt="HtmlAcademy" width="#" height="#"> <!--подходит такое описание в alt или подробнее описать?-->
+							<img src="#" alt="HtmlAcademy" width="#" height="#"> 
 						</a>
 					</li>
 					<li class="partners-item">
 						<a href="#">
-							<img src="#" alt="Барбершоп Бородинский" width="#" height="#"> <!--подходит такое описание в alt или подробнее описать?-->
+							<img src="#" alt="Барбершоп Бородинский" width="#" height="#">
 						</a>
 					</li>
 					<li class="partners-item">
 						<a href="#">
-							<img src="#" alt="Pink" width="#" height="#"> <!--подходит такое описание в alt или подробнее описать?-->
+							<img src="#" alt="Pink" width="#" height="#">
 						</a>
 					</li>
 					<li class="partners-item">
 						<a href="#">
-							<img src="#" alt="Mishka" width="#" height="#"> <!--подходит такое описание в alt или подробнее описать?-->
+							<img src="#" alt="Mishka" width="#" height="#">
 						</a>
 					</li> 
 				</ul>
 			</section>
 		</div>
 	</main>
-	<div class="map"> <!--можно размечать блоки, которые не входят в main,header и footer?-->
-		<!--нужен контейнер для блока с адресом? (карта тянется на всю ширину)-->
+	<div class="map">
 		<img class="map" src="#" alt="Карта офиса по адресу улица Большая Конюшенная, д. 19/8" width="#" height="#"> 
-		<article class="contacts"> <!--или можно как article?-->
+		<section class="contacts conntainer">
 			<h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
 			<p>191186, Санкт-Петербург, <br>
 			ул. Б. Конюшенная, д. 19/8 <p>
 			<p>тел. +7 (812) 275-75-75</p> 
 			<a href="#" class="btn">Напишите нам</a>
-		</article>
+		</section>
 		<div class="pin">
 			<img src="#" alt="Мы здесь" width="#" height="#">
 		</div>
 	</div>
 	<footer class="main-footer">
-		<div class="container">
-			<section class="footer-social">
+			<section class="footer-social container">
 				<div class="footer-social-left">
 					<ul>
 						<li class="social-button"><a href="#">Вконтакте</a></li>
@@ -165,11 +170,21 @@
 					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</div>
 			</section>
-		</div>
 	</footer>
 	<section class="modal modal-feedback">
-		<b>Напишите нам</b> <!--или это заголовок?-->
-		<form></form> <!--пока не разметила форму-->
+		<b>Напишите нам</b> 
+		<form class="feedback-form" action="#" method="post">
+			<label for="name-field">Ваше имя:
+				<input type="text" id="name-field" name="name" value="Представьтесь, пожалуйста">
+			</label>
+			<label for="email-field">Ваш e-mail:
+				<input type="email" id="email-field" name="email" value="Для отправки ответа">
+			</label>
+			<label for="message-field">Текст письма:
+				<textarea id="message-field" name="message" rows="#" cols="#">В свободной форме</textarea>
+			</label>
+			<input class="btn" type="submit" value="Отправить">
+		</form> 
 	</section>
   </body>
 </html>
