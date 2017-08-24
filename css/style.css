@@ -1,24 +1,517 @@
-body {
+html, body {
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto, Arial, sans-serif;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
-	font-weight: normal;
-	font-family: Roboto, Arial, sans-serif;
+
+	background-color: #ffffff;
+
 }
 
-.project-title {
+a {
+	text-decoration: none;
+}
+
+.btn {
+	font: inherit;
+
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #fb565a;
+    border: none;
+}
+
+.btn:hover {
+	background-color: #e74246;
+}
+
+.btn:active {
+	color: rgba(255,255,255,0.3);
+
+	background-color: #d7373b; 
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+	opacity: 0.8;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.slide:nth-child(1) {
+	background-image: url("../img/slide1.png");
+	background-repeat: no-repeat;
+}
+
+.slide:nth-child(2) {
+	background-image: url("../img/slide2.png");
+	background-repeat: no-repeat;
+}
+
+.slide:nth-child(3) {
+	background-image: url("../img/slide3.png");
+	background-repeat: no-repeat;
+} /*Нужно дописать остальные свойства background*/
+/*Нужно прописывать высоту и ширину???*/
+
+.slide-title,
+.inner-page .main title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.slides ul {
+	list-style: none;
+}
+
+.inner-page .main-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+
+	text-align: center;
+}
+
+.services ul {
+	list-style: none;
+}
+
+.services-item:nth-child(1) {
+	background-image: url("../img/illustration-1.png");
+	background-repeat: no-repeat; /*ИЛИ НАДО ПСЕВДОЭЛЕМЕНТАМИ КАРТИНКУ ЗАДАВАТЬ???*/
+}
+
+.services-item:nth-child(2) {
+	background-image: url("../img/illustration-2.png");
+	background-repeat: no-repeat;
+}
+
+.services-item:nth-child(3) {
+	background-image: url("../img/illustration-3.png");
+	background-repeat: no-repeat;
+} 
+
+.services-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.services-item:nth-child(2) .btn {
+	background-color: #00ca74;
+}
+
+.services-item:nth-child(3) .btn {
+	background-color: #efc849;
+}
+
+.services-item:nth-child(2) .btn:hover {
+	background-color: #00bc6c;
+}
+
+.services-item:nth-child(2) .btn:active {
+	color: rgba(255,255,255,0.3);
+
+	background-color: #00aa62; 
+}
+
+.services-item:nth-child(3) .btn:hover {
+	background-color: #eab534;
+}
+
+.services-item:nth-child(3) .btn:active {
+	color: rgba(255,255,255,0.3);
+
+	background-color: #e5a722; 
+}
+
+.about-company .lead {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	color: #000000;
+}
+
+.orders-title,
+.features-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.orders {
+	list-style: none
+}
+
+.about-company th {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: #283136;
+}
+
+.about-company td {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 10,06px;
+	color: #000000;
+}
+
+.about-company-right {
+	background-image: url("../img/nerds-illustration.png");
+	background-repeat: no-repeat;
+} 
+
+.partners ul {
+	list-style: none;
+}
+
+.partners-item img {
+	opacity: 0.2;
+} /*можно ховер на картинку, а не на ссылку вешать???*/
+
+.partners-item img:hover {
+	opacity: 1;
+}
+
+.partners-item img:active {
+	opacity: 0.1;
+}
+
+.catalog-filters fieldset {
+	border: none;
+}
+
+.price-filter legend {
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
 	color: #000000;
-	font-weight: bold;
-	font-family: Roboto, Arial, sans-serif;
-} 
+	text-transform: uppercase;
 
-.services-title {
-	font-size: 24px;
+	letter-spacing: 0.01em;
+}
+
+.grid-filter legend,
+.features-filter legend {
+	font-weight: 700;
+	font-size: 18px;
 	line-height: 30px;
 	color: #000000;
-	font-weight: bold;
-	font-family: Roboto, Arial, sans-serif;
+	text-transform: uppercase;
 }
+
+.grid-filter label,
+.features-filter label {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+
+.catalog-filters .btn {
+	color: #000000;
+
+	background-color: #eeeeee;
+}
+
+.catalog-filters .btn:hover {
+	background-color: #dfdfdf;
+}
+
+.catalog-filters .btn:active {
+	color: rgba(0,0,0,0.3);
+
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
+}
+
+.sorting-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sorting-type {
+	list-style: none
+}
+
+.sorting-type a {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0,0,0,0.3);
+	text-transform: uppercase;
+}
+
+.sorting-type a:hover {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0,0,0,0.6);
+	text-transform: uppercase;
+}
+
+.sorting-type a:active {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0,0,0,1);
+	text-transform: uppercase;
+}
+
+.pointers {
+	list-style: none;
+}
+
+.projects ul {
+	list-style: none;
+}
+
+.cart-block {
+	position: relative;
+}
+
+.cart-block::before {
+	content: "";
+	position: absolute;
+	width: 360px;
+	height: 40px;
+	background-image: url("../img/browser.svg");
+	opacity: 0.12;
+	top: -40px;
+}
+
+.cart-block:hover::before {
+	opacity: 1;
+}
+
+.hover-block {
+	text-align: center;
+
+	background-color: #eeeeee;
+}
+
+.project-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.project-title:hover {
+	color: #fb565a;
+	/*решила простилизовать также, как и у ссылок в меню, в стайлгайде не прописаны состояния*/
+}
+
+.project-title:active {
+	color: rgba(0,0,0,0.3); 
+	/*решила простилизовать также, как и у ссылок в меню, в стайлгайде не прописаны состояния*/
+}
+
+.hover-block p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.hover-block .btn:active {
+	color: #ffffff;
+}
+
+.page-number-item{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+	text-align: center;
+
+	background-color: #eeeeee;
+}
+
+.page-number-item:hover {
+	background-color: #dfdfdf;
+}
+
+.page-number-item:active {
+	color: rgba(0,0,0,0.3);
+
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1)
+}
+
+.active-page {
+	background-color: #ffffff;
+	outline: 3px solid #dbdbdb;
+}
+
+.contacts {
+	background-color: #ffffff;
+}
+
+.contacts-card-title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.contacts p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.footer-social-left ul {
+	list-style: none;
+}
+
+.footer-social-left a {
+	color: #000000; /*пока что так*/
+}
+
+.appeal {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+	color: #000000;
+} 
+
+.footer-social-right p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #444444;
+}
+
+.modal-feedback {
+	background-color: #ffffff;
+
+	box-shadow: 0 20px 40px rgba(0,1,1,0.75);
+}
+
+.feedback-form-title {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	color: #000000;
+
+	background-color: #ffffff; 
+}
+
+.feedback-form label {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+	font: inherit;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	color: rgba(68,68,68,0.5);
+
+	border: 2px solid #d7dcde;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+	color: rgb(68,68,68);
+
+	border: 2px solid #000000;
+}
+
+.feedback-form input:invalid,
+.feedback-form textarea:invalid {
+	color: #e74246;
+
+	border: 2px solid #e74246;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

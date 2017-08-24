@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
 	<header class="main-header">
 		<div class="container">
 			<div class="main-header-top">
@@ -17,7 +19,7 @@
 					<ul class="site-navigation">
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
-						<li><a  class="active">Магазин</a></li>
+						<li><a class="active">Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 
@@ -92,7 +94,7 @@
 		    				<img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
 		    			</div>
 		    			<div class="hover-block">
-		    				<a href="#"><h3 class="project-title">Sedona</h3></a>
+		    				<a class="project-title" href="#"><h3>Sedona</h3></a>
 		    				<p>Информационный сайт 
 							для туристов</p>
 		    				<a class="btn" href="#">9 900 руб.</a> 
@@ -104,7 +106,7 @@
 		    				<img src="img/img-pink.jpg" alt="Pink App" width="360" height="576">
 		    			</div>
 		    			<div class="hover-block">
-		    				<a href="#"><h3 class="project-title">Pink App</h3></a> 
+		    				<a class="project-title" href="#"><h3>Pink App</h3></a> 
 		    				<p>Продуктовый лендинг
 							приложения для iOS и Android</p>
 		    				<a class="btn" href="#">9 900 руб.</a> 
@@ -117,7 +119,7 @@
 		    				<img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
 		    			</div>
 		    			<div class="hover-block">
-		    				<a href="#"><h3 class="project-title">Barbershop</h3></a>
+		    				<a class="project-title" href="#"><h3>Barbershop</h3></a>
 		    				<p>Сайт салоны красоты.
 		    				Для мужчин, да.</p>
 		    				<a class="btn" href="#">9 900 руб.</a> 
@@ -130,7 +132,7 @@
 		    				<img src="img/img-mishka.jpg" alt="MISHKA" width="360" height="576">
 		    			</div>
 		    			<div class="hover-block">
-		    				<a href="#"><h3 class="project-title">MISHKA</h3></a>
+		    				<a class="project-title" href="#"><h3>MISHKA</h3></a>
 		    				<p>Интернет-магазин 
 							вязаных игрушек</p>
 		    				<a class="btn" href="#">9 900 руб.</a> 
@@ -143,7 +145,7 @@
 		    				<img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
 		    			</div>
 		    			<div class="hover-block">
-		    				<a href="#"><h3 class="project-title">A Plus</h3></a> 
+		    				<a class="project-title" href="#"><h3>A Plus</h3></a> 
 		    				<p>Лендинг курсов повышения квалификации</p>
 		    				<a class="btn" href="#">9 900 руб.</a> 
 		    			</div>
@@ -155,7 +157,7 @@
 		    				<img src="img/img-kvast.jpg" alt="КВАСТ" width="360" height="576">
 		    			</div>
 		    			<div class="hover-block">
-		    				<a href="#"><h3 class="project-title">КВАСТ</h3></a> 
+		    				<a class="project-title" href="#"><h3>КВАСТ</h3></a> 
 		    				<p>Промо-сайт производителя
 							крафтового кваса</p>
 		    				<a class="btn" href="#">9 900 руб.</a> 
@@ -165,10 +167,10 @@
 		    </section>
 		    <section class="page-numbers">
 		    	<ul>
-		    		<li class="page-number-item active-page"><a>1</a></li>
-		    		<li class="page-number-item"><a href="#">2</a></li>
-		    		<li class="page-number-item"><a href="#">3</a></li>
-		    		<li class="page-number-item"><a href="#">Следующая</a></li>
+		    		<li><a class="page-number-item active-page">1</a></li>
+		    		<li><a class="page-number-item" href="#">2</a></li>
+		    		<li><a class="page-number-item" href="#">3</a></li>
+		    		<li><a class="page-number-item" href="#">Следующая</a></li>
 		    	</ul>
 		    </section>
 		    </div>
@@ -202,7 +204,7 @@
 				</div>
 			</section>
 	</footer>
-	<section class="modal modal-feedback">
+	<section class="modal-feedback">
 	<h2 class="modal-feedback-title visually-hidden">Обратная связь</h2>
 		<b class="feedback-form-title">Напишите нам</b> 
 		<form class="feedback-form" action="#" method="post">
@@ -215,7 +217,7 @@
 			<p><label>Текст письма:
 				<textarea name="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
 			</label></p>
-			<button class="button" type="submit">Отправить</button>
+			<button class="btn" type="submit">Отправить</button>
 		</form> 
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
