@@ -9,7 +9,6 @@ html, body {
 	color: #283136;
 
 	background-color: #ffffff;
-
 }
 
 a {
@@ -18,7 +17,6 @@ a {
 
 .btn {
 	font: inherit;
-
 	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
@@ -83,24 +81,23 @@ a {
 	opacity: 0.3;
 }
 
-.slide:nth-child(1) {
-	background-image: url("../img/slide1.png");
+.slide {
 	background-repeat: no-repeat;
 }
 
-.slide:nth-child(2) {
+.slide-1 {
+	background-image: url("../img/slide1.png");	
+}
+
+.slide-2 {
 	background-image: url("../img/slide2.png");
-	background-repeat: no-repeat;
 }
 
-.slide:nth-child(3) {
+.slide-3 {
 	background-image: url("../img/slide3.png");
-	background-repeat: no-repeat;
-} /*Нужно дописать остальные свойства background*/
-/*Нужно прописывать высоту и ширину???*/
+} 
 
-.slide-title,
-.inner-page .main title {
+.slide-title {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
@@ -124,52 +121,52 @@ a {
 	list-style: none;
 }
 
-.services-item:nth-child(1) {
+.services-item {
+	background-repeat: no-repeat;
+}
+
+.services-item-red {
 	background-image: url("../img/illustration-1.png");
-	background-repeat: no-repeat; /*ИЛИ НАДО ПСЕВДОЭЛЕМЕНТАМИ КАРТИНКУ ЗАДАВАТЬ???*/
 }
 
-.services-item:nth-child(2) {
+.services-item-green {
 	background-image: url("../img/illustration-2.png");
-	background-repeat: no-repeat;
 }
 
-.services-item:nth-child(3) {
+.services-item-yellow {
 	background-image: url("../img/illustration-3.png");
-	background-repeat: no-repeat;
 } 
 
 .services-item h3 {
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 	color: #000000;
 }
 
-.services-item:nth-child(2) .btn {
+.services-item-green .btn {
 	background-color: #00ca74;
 }
 
-.services-item:nth-child(3) .btn {
+.services-item-yellow .btn {
 	background-color: #efc849;
 }
 
-.services-item:nth-child(2) .btn:hover {
+.services-item-green .btn:hover {
 	background-color: #00bc6c;
 }
 
-.services-item:nth-child(2) .btn:active {
-	color: rgba(255,255,255,0.3);
-
-	background-color: #00aa62; 
-}
-
-.services-item:nth-child(3) .btn:hover {
+.services-item-yellow .btn:hover {
 	background-color: #eab534;
 }
 
-.services-item:nth-child(3) .btn:active {
+.services-item-green .btn:active {
+	color: rgba(255,255,255,0.3);
+	background-color: #00aa62; 
+}
+
+.services-item-yellow .btn:active {
 	color: rgba(255,255,255,0.3);
 
 	background-color: #e5a722; 
@@ -218,15 +215,15 @@ a {
 	list-style: none;
 }
 
-.partners-item img {
+.partners-item a {
 	opacity: 0.2;
-} /*можно ховер на картинку, а не на ссылку вешать???*/
+} 
 
-.partners-item img:hover {
+.partners-item a:hover {
 	opacity: 1;
 }
 
-.partners-item img:active {
+.partners-item a:active {
 	opacity: 0.1;
 }
 
@@ -240,7 +237,6 @@ a {
 	line-height: 30px;
 	color: #000000;
 	text-transform: uppercase;
-
 	letter-spacing: 0.01em;
 }
 
@@ -329,8 +325,10 @@ a {
 .cart-block::before {
 	content: "";
 	position: absolute;
+
 	width: 360px;
 	height: 40px;
+
 	background-image: url("../img/browser.svg");
 	opacity: 0.12;
 	top: -40px;
@@ -356,12 +354,10 @@ a {
 
 .project-title:hover {
 	color: #fb565a;
-	/*решила простилизовать также, как и у ссылок в меню, в стайлгайде не прописаны состояния*/
 }
 
 .project-title:active {
 	color: rgba(0,0,0,0.3); 
-	/*решила простилизовать также, как и у ссылок в меню, в стайлгайде не прописаны состояния*/
 }
 
 .hover-block p {
@@ -425,7 +421,7 @@ a {
 }
 
 .footer-social-left a {
-	color: #000000; /*пока что так*/
+	color: #000000; 
 }
 
 .appeal {
@@ -444,7 +440,6 @@ a {
 
 .modal-feedback {
 	background-color: #ffffff;
-
 	box-shadow: 0 20px 40px rgba(0,1,1,0.75);
 }
 
