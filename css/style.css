@@ -510,7 +510,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
-	margin-bottom: 53px;
+	margin-bottom: 60px;
 	padding: 0; 
 
 	list-style: none;
@@ -518,7 +518,7 @@ a {
 
 .projects-item {
 	flex-basis: 360px;
-	margin-bottom: 67px;
+	margin-bottom: 73px;
 	margin-right: 39px;
 }
 
@@ -533,6 +533,10 @@ a {
 
 .cart-block {
 	position: relative;
+}
+
+.cart-block img {
+	display: block;
 }
 
 .cart-block::before {
@@ -554,7 +558,7 @@ a {
 .hover-block {
 	display: none;
 	position: absolute;
-	bottom: 7px;
+	bottom: 0;
 	width: 360px;
 	min-height: 230px;
 
