@@ -39,6 +39,7 @@ a {
 	padding: 16px 54px;
 
 	font: inherit;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
@@ -75,7 +76,7 @@ a {
 .main-navigation {
 	display: flex;
 	align-items: flex-end;
-
+	justify-content: space-between;
 	min-height: 115px; /*для сетки*/
 
 	font-size: 16px;
@@ -124,10 +125,8 @@ a {
 	display: flex;
 	align-items: center;
 
-	width: 600px;
 	min-height: 48px; /*для сетки*/ 
 	margin: 0;
-	margin-right: 40px;
 	padding: 0;
 
 	list-style: none;
@@ -137,12 +136,16 @@ a {
 	margin-right: 49px;
 }
 
+.site-navigation li:last-child a {
+	margin-right: 0;
+}
+
 .user-navigation {
 	display: flex;
 	justify-content: flex-end;
+	flex-basis: 160px;
 	align-items: center;
 
-	width: 160px;
 	min-height: 48px; /*для сетки*/
 	margin: 0;
 	padding: 0;
@@ -352,7 +355,6 @@ a {
 .partners ul {
 	display: flex;
 	justify-content: space-between;
-
 	margin: 0;
 	margin-bottom: 127px;
 	padding: 0;
@@ -389,6 +391,8 @@ a {
 
 .catalog-filters fieldset {
 	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 .price-filter legend {
@@ -447,6 +451,7 @@ a {
 
 .sorting-title {
 	width: 160px;
+	margin-right: 240px;
 
 	font-weight: 700;
 	font-size: 18px;
@@ -492,16 +497,19 @@ a {
 
 .pointers {
 	display: flex;
+	justify-content: space-between;
 	width: 40px;
 	margin: 0;
+	margin-left: auto;
 	padding: 0;
 
 	list-style: none;
 }
 
-.projects ul {
+.projects .projects-list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	margin: 0;
 	margin-bottom: 60px;
 	padding: 0; 
@@ -512,12 +520,8 @@ a {
 .projects-item {
 	flex-basis: 360px;
 	margin-bottom: 73px;
-	margin-right: 39px;
 }
 
-.projects-item:nth-child(2n) {
-	margin-right: 0;
-}
 
 .projects-item:nth-last-child(1),
 .projects-item:nth-last-child(2) {
@@ -607,7 +611,7 @@ a {
 	color: #ffffff;
 }
 
-.page-numbers ul {
+.page-numbers .page-numbers-list {
 	display: flex;
 	min-height: 50px; /*для сетки*/
 	margin: 0;
@@ -645,10 +649,11 @@ a {
 
 .map {
 	min-height: 416px; 
+
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 100%;
+	background-size: contain;
 }
 
 .contacts {
@@ -678,7 +683,6 @@ a {
 
 .footer-social {
 	display: flex;
-
 	padding: 70px 0;
 }
 
@@ -691,6 +695,7 @@ a {
 .footer-social-left ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
 
 	list-style: none;
 }
@@ -719,6 +724,7 @@ a {
 }
 
 .modal-feedback {
+	display: none;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0,1,1,0.75);
 }
