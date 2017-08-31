@@ -23,7 +23,7 @@
 					</ul>
 
 					<ul class="user-navigation">
-						<li><a class="user-block" href="#">Корзина</a></li>
+						<li><a class="basket-link" href="#">Корзина</a></li>
 					</ul>
 				</nav>
 				<h1 class="main-title">Магазин готовых шаблонов</h1>
@@ -35,36 +35,53 @@
 			<div class="catalog-content-left">
 				<form class="catalog-filters" action="#" method="get">
 					<fieldset class="price-filter">
-						<legend>Стоимость:</legend> <!--подожду демку, сейчас для меня сложный фильтр-->
+						<legend>Стоимость:</legend> 
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div style="width: 70%;" class="bar"></div>
+									<div class="toggle min-toggle"></div>
+									<div class="toggle max-toggle"></div>
+								</div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">от
+									<input type="text" name="min-price" value="0">
+								</label>
+								<label class="max-price">до 
+									<input type="text" name="max-price" value="15000">
+								</label>
+							</div>
+						</div>
 					</fieldset>
 					<fieldset class="grid-filter">
 						<legend>Сетка:</legend>
-						<p><label>
-							<input type="radio" id="grid-1" name="grid-toggle" checked> Адаптивная
+						<p class="filters-item"><label>
+							<input type="radio" id="grid-1" name="grid-toggle" checked hidden> Адаптивная
 						</label></p>
-						<p><label>
-							<input type="radio" id="grid-2" name="grid-toggle"> Фиксированная
+						<p class="filters-item"><label>
+							<input type="radio" id="grid-2" name="grid-toggle" hidden> Фиксированная
 						</label></p>
-						<p><label>
-							<input type="radio" id="grid-3" name="grid-toggle"> Резиновая
+						<p class="filters-item"><label>
+							<input type="radio" id="grid-3" name="grid-toggle" hidden disabled> Резиновая
 						</label></p>
 					</fieldset>
 					<fieldset class="features-filter">
 						<legend>Особенности:</legend>
-						<p><label>
-							<input type="checkbox" name="slider" checked> Слайдер
+						<p class="filters-item"><label>
+							<input type="checkbox" name="slider" checked hidden> Слайдер
 						</label></p>
-						<p><label>
-							<input type="checkbox" name="features-block"> Блок преимуществ
+						<p class="filters-item"><label>
+							<input type="checkbox" name="features-block" hidden> Блок преимуществ
 						</label></p>
-						<p><label>
-							<input type="checkbox" name="news" checked> Новости
+						<p class="filters-item"><label>
+							<input type="checkbox" name="news" checked hidden> Новости
 						</label></p>
-						<p><label>
-							<input type="checkbox" name="galery"> Галерея
+						<p class="filters-item"><label>
+							<input type="checkbox" name="galery" hidden> Галерея
 						</label></p>
-						<p><label>
-							<input type="checkbox" name="basket"> Корзина
+						<p class="filters-item"><label>
+							<input type="checkbox" name="basket" hidden> Корзина
 						</label></p>
 					</fieldset>
 					<button class="btn" type="submit">Показать</button>
@@ -79,8 +96,8 @@
 		    		<li><a href="#">По названию</a></li>
 		    	</ul>
 		    	<ul class="pointers">
-		    		<li><a href="#">x<p class="visually-hidden">В прямом порядке</p></a></li>
-		    		<li><a href="#">x<p class="visually-hidden">В обратном порядке</p></a></li> 
+		    		<li><a class="pointer pointer-down active" href="#"><p class="visually-hidden">В прямом порядке</p></a></li>
+		    		<li><a class=" pointer pointer-up" href="#"><p class="visually-hidden">В обратном порядке</p></a></li> 
 		    	</ul>
 		    </section>
 		    <section class="projects">
@@ -170,10 +187,10 @@
 		    </sectiocon>
 		    <section class="page-numbers">
 		    	<ul class="page-numbers-list">
-		    		<li><a class="page-number-item active-page">1</a></li>
+		    		 <li><a class="page-number-item active-page">1</a></li>  
 		    		<li><a class="page-number-item" href="#">2</a></li>
 		    		<li><a class="page-number-item" href="#">3</a></li>
-		    		<li><a class="page-number-item next-page" href="#">Следующая</a></li>
+		    		<li><a class="page-number-item next-page" href="#">Следующая</a></li> 
 		    	</ul>
 		    </section>
 		    </div>
@@ -195,9 +212,9 @@
 			<section class="footer-social container">
 				<div class="footer-social-left">
 					<ul>
-						<li><a class="social-button" href="#">Вконтакте</a></li> 
-						<li><a class="social-button" href="#">Фейсбук</a></li> 
-						<li><a class="social-button" href="#">Инстаграм</a></li> 
+						<li><a class="social-button vk-social" href="#"><span class="visually-hidden">Вконтакте</span></a></li> 
+						<li><a class="social-button fb-social" href="#"><span class="visually-hidden">Фейсбук</span></a></li> 
+						<li><a class="social-button insta-social" href="#"><span class="visually-hidden">Инстаграм</span></a></li> 
 					</ul>
 				</div>
 				<div class="footer-social-right">
