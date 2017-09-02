@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 	<header class="main-header">
@@ -20,7 +20,6 @@
 						<li><a href="#">Клиенты</a></li>
 						<li><a href="catalog.html">Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
-
 					</ul>
 
 					<ul class="user-navigation">
@@ -35,9 +34,6 @@
 						<label for="btn-1"></label> 
 						<label for="btn-2"></label>
 						<label for="btn-3"></label>
-						<i class="active"></i>
-						<i></i>
-						<i></i>
 					</div>
 					<div class="slides">
 						<ul>
@@ -181,15 +177,17 @@
 	<h2 class="modal-feedback-title visually-hidden">Обратная связь</h2>
 		<b class="feedback-form-title">Напишите нам</b> 
 		<form class="feedback-form" action="#" method="post">
-			<p><label>Ваше имя:
-				<input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-			</label></p>
-			<p><label>Ваш e-mail:
-				<input type="email" name="email" value="" placeholder="Для отправки ответа">
-			</label></p>
-			<p><label>Текст письма:
-				<textarea name="message" rows="#" cols="#" placeholder="В свободной форме"></textarea>
-			</label></p>
+			<div class="customer-information">
+				<p><label for="name-field">Ваше имя:</label>
+					<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+				</p>
+				<p><label for="email-field">Ваш e-mail:</label>
+					<input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+				</p>
+			</div>
+			<p><label for="message-field">Текст письма:</label>
+				<textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+			</p>
 			<button class="btn" type="submit">Отправить</button>
 		</form> 
 		<button class="modal-close" type="button">Закрыть</button>
