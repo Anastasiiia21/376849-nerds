@@ -235,15 +235,17 @@
 	<h2 class="modal-feedback-title visually-hidden">Обратная связь</h2>
 		<b class="feedback-form-title">Напишите нам</b> 
 		<form class="feedback-form" action="#" method="post">
-			<p><label>Ваше имя:
-				<input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-			</label></p>
-			<p><label>Ваш e-mail:
-				<input type="email" name="email" value="" placeholder="Для отправки ответа">
-			</label></p>
-			<p><label>Текст письма:
-				<textarea name="message" placeholder="В свободной форме"></textarea>
-			</label></p>
+			<div class="customer-information">
+				<p><label for="name-field">Ваше имя:</label>
+					<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+				</p>
+				<p><label for="email-field">Ваш e-mail:</label>
+					<input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+				</p>
+			</div>
+			<p><label for="message-field">Текст письма:</label>
+				<textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+			</p>
 			<button class="btn" type="submit">Отправить</button>
 		</form> 
 		<button class="modal-close" type="button">Закрыть</button>
