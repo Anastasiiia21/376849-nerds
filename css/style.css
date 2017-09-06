@@ -32,7 +32,7 @@ input[type="radio"].visually-hidden {
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
    	        clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+               clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -1093,7 +1093,7 @@ grid-filters-item input:focus + label {
     line-height: 18px;
     color: #666666;
   
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .projects-item:nth-child(1) .hover-block p,
@@ -1180,14 +1180,29 @@ grid-filters-item input:focus + label {
 
 .map {
     position: relative;
-    min-height: 416px;
+    height: 416px;
     margin-top: 80px;
   
+  	background-color: #e9e5dc;
     background-image: url("../img/map-and-marker.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 }
+
+.map iframe {
+	position: relative;
+	top: 0;
+	left: 50%;
+    z-index: 2;
+	height: 416px;
+	min-width: 1200px;
+	width: 100%;
+
+	border: none;
+	transform: translate(-50%);
+}
+
 .inner-page .map {
     margin-top: 60px;
 }
@@ -1195,6 +1210,7 @@ grid-filters-item input:focus + label {
 .map .contacts {
     position: absolute;
     top: 54px;
+	z-index: 3;
     padding: 50px;
   
     background-color: #ffffff;
@@ -1328,21 +1344,126 @@ grid-filters-item input:focus + label {
     color: #444444;
 }
 
+
+@-webkit-keyframes bounce {
+    0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+    70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+    90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+    0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+
+    70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+    90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+    20%,
+    40%,
+    60%,
+    80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+    20%,
+    40%,
+    60%,
+    80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
 .modal-feedback {
     position: fixed;
-    top: 50%;
+    top: 30px;
     left: 50%;
-    -webkit-transform:translate(-50%,-50%);
-        -ms-transform:translate(-50%,-50%);
-            transform:translate(-50%,-50%);
     z-index: 1000;
     display: none;
     width: 760px;
+    margin-left: -480px;
     padding: 67px 100px 83px 100px;
  
     background-color: #ffffff;
     -webkit-box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
   		    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75); 
+}
+
+.modal-show {
+	display: block;
+
+	-webkit-animation: bounce 0.6s;
+	        animation: bounce 0.6s;
+}
+
+.modal-error {
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
 }
 
 .feedback-form-title {
